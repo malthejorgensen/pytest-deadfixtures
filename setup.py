@@ -41,17 +41,17 @@ class VersionCommand(Command):
 
 
 setup(
-    name='pytest-deadfixtures',
+    name='pytest-usedfixtures',
     version=version,
-    author='João Luiz Lorencetti',
-    author_email='me@dirtycoder.net',
-    maintainer='João Luiz Lorencetti',
-    maintainer_email='me@dirtycoder.net',
+    author='Malthe Jørgensen',
+    author_email='malthe.jorgensen@gmail.com',
+    maintainer='Malthe Jørgensen',
+    maintainer_email='malthe.jorgensen@gmail.com',
     license='MIT',
-    url='https://github.com/jllorencetti/pytest-deadfixtures',
+    url='https://github.com/malthejorgensen/pytest-usedfixtures',
     description='A simple plugin to list unused fixtures in pytest',
     long_description=read('README.rst'),
-    py_modules=['pytest_deadfixtures'],
+    py_modules=['pytest_usedfixtures'],
     install_requires=['pytest>=3.0.0'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
@@ -72,7 +72,7 @@ setup(
     },
     entry_points={
         'pytest11': [
-            'deadfixtures = pytest_deadfixtures',
+            'usedfixtures = pytest_usedfixtures',
         ],
     },
 )
